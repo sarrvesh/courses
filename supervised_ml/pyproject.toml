@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "supervised-ml"
+version = "0.0"
+description = "Supervised Machine Learning"
+authors = [""]
+
+[[tool.poetry.source]]
+name = 'ska-nexus'
+url = 'https://artefact.skao.int/repository/pypi-internal/simple'
+
+[[tool.poetry.source]]
+name = "PyPI-public"
+url = 'https://pypi.org/simple'
+
+[tool.poetry.dependencies]
+matplotlib = "*"
+pandas = ">2"
+python = ">3.12"
+ipython = "*"
+jupyter = "*"
+notebook = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
